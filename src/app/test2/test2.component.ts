@@ -9,6 +9,8 @@ export class Test2Component implements OnInit {
 
     button_name = 'Button'
 
+    text = ''
+
     isAppLoading = true
 
     constructor() {
@@ -22,5 +24,9 @@ export class Test2Component implements OnInit {
 
     changeButtonNameHandler() {
         this.button_name = 'New button'
+    }
+
+    changeTextHandler(event: Event) {
+        this.text = (event.currentTarget as HTMLInputElement).value
     }
 }
