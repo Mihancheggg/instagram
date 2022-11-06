@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from '@angular/core'
 
 interface IUser {
     age: number
@@ -6,24 +6,17 @@ interface IUser {
 }
 
 @Component({
-    selector: 'app-test1',
+    selector: 'inst-test1',
     templateUrl: '/test1.component.html',
-    styleUrls: ['test1.component.css']
+    styleUrls: ['test1.component.css'],
 })
-
-export class Test1Component implements OnInit {
-
+export class Test1Component {
     testTitle = 'hey'
 
     user: IUser = {
         age: 32,
-        name: 'Alex'
+        name: 'Alex',
     }
 
-    constructor() {
-    }
-
-    ngOnInit(): void {
-    }
-
+    constructor() {}
 }

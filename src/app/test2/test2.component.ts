@@ -1,12 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core'
 
 @Component({
-    selector: 'app-test2',
+    selector: 'inst-test2',
     templateUrl: './test2.component.html',
-    styleUrls: ['./test2.component.css']
+    styleUrls: ['./test2.component.css'],
 })
-export class Test2Component implements OnInit {
-
+export class Test2Component {
     button_name = 'Button'
 
     text = ''
@@ -14,12 +13,9 @@ export class Test2Component implements OnInit {
     isAppLoading = true
 
     constructor() {
-        setTimeout(
-            ()=>{ this.isAppLoading = false },3000
-        )
-    }
-
-    ngOnInit(): void {
+        setTimeout(() => {
+            this.isAppLoading = false
+        }, 3000)
     }
 
     changeButtonNameHandler() {
