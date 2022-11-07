@@ -1,5 +1,10 @@
 <div>
-    <p>Props inheritance</p>
+    <p>Props inheritance, input and output decorators</p>
     <h1>Parent: {{ name }} {{ surname }} from {{ address.city }}</h1>
-    <inst-child [surnameProps]="surname" [addressProps]="address"></inst-child>
+    <p>Child's math grade: {{ math }}</p>
+    <p>Child's physics grade: {{ physics }}</p>
+    <inst-child
+        (sendGradeEvent)="getGrade($event)"
+        [surnameProps]="surname"
+        [addressProps]="address"></inst-child>
 </div>

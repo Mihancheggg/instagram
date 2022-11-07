@@ -9,6 +9,7 @@ import { Test7Component } from './test7/test7.component'
 import { FormsModule } from '@angular/forms'
 import { ParentComponent } from './parent/parent.component'
 import { ChildComponent } from './parent/child/child.component'
+import { Test7childComponent } from './test7/test7child/test7child.component'
 
 @NgModule({
     declarations: [
@@ -19,6 +20,7 @@ import { ChildComponent } from './parent/child/child.component'
         Test7Component,
         ParentComponent,
         ChildComponent,
+        Test7childComponent,
     ],
     imports: [BrowserModule, FormsModule],
     providers: [],
